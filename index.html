@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>数独ソルバ v2.29.0</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#10b981">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>数独ソルバ v2.29.0</h1>
+      <div id="offline" class="badge" hidden>オフライン</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card board-card">
+      <div class="card-head row3">
+        <h2 class="left">盤面</h2>
+        <button id="solve" class="center">解く</button>
+        <button id="clearAll" class="secondary right">全てクリア</button>
+      </div>
+
+      <div class="board-wrap">
+        <div id="grid" class="grid board" aria-label="盤面（セルをタップで選択）"></div>
+      </div>
+
+      <div id="numpadWrap">
+        <div class="numpad" aria-label="数字入力パッド">
+          <button data-key="1">1</button>
+          <button data-key="2">2</button>
+          <button data-key="3">3</button>
+          <button data-key="4">4</button>
+          <button data-key="5">5</button>
+          <button data-key="6">6</button>
+          <button data-key="7">7</button>
+          <button data-key="8">8</button>
+          <button data-key="9">9</button>
+          <button data-key="fwd" class="ghost">≫</button>
+          <button data-key="0" aria-label="ゼロ">0</button>
+          <button data-key="back" class="ghost">≪</button>
+        </div>
+      </div>
+
+      <pre id="console" class="console" aria-live="polite"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>端末内で完結（オフライン可） / 入力はキーパッド / 与件と解答を色分け</small>
+    </div>
+  </footer>
+
+  <script defer src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
