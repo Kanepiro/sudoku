@@ -21,9 +21,7 @@ header .wrap{width:100%;padding:max(4px, calc(4px + var(--safe-top))) calc(10px 
 h1{font-size:clamp(15px,4.4vw,20px);margin:0;line-height:1.12}
 .badge{background:#f59e0b;color:#111827;padding:4px 8px;border-radius:8px;font-weight:800}
 
-main{width:100%;padding-left: calc(6px +  calc(8px + var(--safe-left));padding-right: calc(6px +  calc(8px + var(--safe-right));
-  padding-bottom: calc(8px +  calc(16px + var(--safe-bottom));
-  margin:8px auto;display:grid; gap:8px;justify-items:center;}
+main{width:100%;padding-left: calc(6px + var(--safe-left));padding-right: calc(6px + var(--safe-right));padding-bottom: calc(8px + var(--safe-bottom));margin:8px auto;display:grid; gap:8px;justify-items:center;}
 .card{width:min(100%,var(--container-px));background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px}
 .board-card{padding-bottom:16px}
 
