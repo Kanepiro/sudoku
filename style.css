@@ -75,7 +75,7 @@ button.secondary{background:#1f3a34;color:var(--sub)}
   border-radius:14px;background:#0f3a30;color:#aef5e4;border:1px solid #1f6a57;
   touch-action:manipulation;
 }
-.numpad button:active{transform:translateY(1px)}
+
 .numpad button.ghost{background:#0d2b23;color:#8ee6d3}
 
 .console{background:#061a15;border:1px dashed var(--border);border-radius:12px;padding:10px;min-height:80px;white-space:pre-wrap;word-break:break-word;color:#a7f3d0}
