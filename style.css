@@ -80,3 +80,12 @@ button.secondary{background:#1f3a34;color:var(--sub)}
 
 footer{background:transparent;color:var(--sub)}
 footer .wrap{width:100%;padding:10px calc(10px + var(--safe-right)) calc(10px + var(--safe-bottom)) calc(10px + var(--safe-left));margin:0 auto;display:grid; place-items:center;text-align:center}
+
+
+/* Fallback for browsers without aspect-ratio support (e.g., some Android WebViews) */
+@supports not (aspect-ratio: 1 / 1) {
+  :root{ --grid-side: min(100vw, var(--grid-max)); }
+  .grid.board{ width: var(--grid-side); }
+  .cell{ height: calc((var(--grid-side) - 4px - 4.5px) / 9); }
+}
+
