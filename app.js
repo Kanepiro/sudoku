@@ -17,7 +17,7 @@
   function log(msg){ consoleEl.textContent = msg; }
 
   // Haptics
-  function haptic(ms=0){}catch(e){} }
+  function haptic(ms=15){ try{ /* haptics disabled: no vibrate */ }catch(e){} }
 
   function buildBoard(){
     gridEl.innerHTML='';
