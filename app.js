@@ -78,9 +78,8 @@
   }
 
   function bindNumpad(){
-    const handler = (e)=> applyKey(e.currentTarget.dataset.key);
-    $$('.numpad button').forEach(btn=>{
-      btn.addEventListener('click', handler);
+  const handler=(e)=>applyKey(e.currentTarget.dataset.key);
+  $$(".numpad button").forEach(btn=>{ btn.addEventListener("click", handler); });
 });
     $('#solve').addEventListener('click', ()=> haptic(14));
     $('#clearAll').addEventListener('click', ()=> haptic(14));
@@ -140,7 +139,7 @@
       let br=-1, bc=-1, best=null, cnt=10;
       for (let r=0;r<9;r++) for (let c=0;c<9;c++){
         if (G[r*9+c]===0){
-          const cand = new Set([...rows[r]].filter(v=> cols[c].has(v) && boxes[boxId(r,c)].has(v)));
+          const cand = new Set([rows[r]].filter(v=> cols[c].has(v) && boxes[boxId(r,c)].has(v)));
           const k=cand.size; if (k===0) return {r,cand};
           if (k<cnt){ br=r; bc=c; best=cand; cnt=k; if (k===1) return {r:br,c:bc,cand:best}; }
         }
