@@ -46,10 +46,9 @@ button.secondary{background:#1f3a34;color:var(--sub)}
   margin-inline: auto;
   display:grid;grid-template-columns:repeat(9,1fr);
   gap:0.5px;background:#0b1f1a;padding:2px;border-radius:12px;border:1px solid var(--border)
-}
+grid-template-rows: repeat(9, auto);}
 
-.cell{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-size:var(--cell-fs);
-  font-weight:900;letter-spacing:.02em;border-radius:10px;border:1px solid var(--border);background:#0c1f1a;color:var(--text);user-select:none}
+.cell{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-size:var(--cell-fs);font-weight:900;letter-spacing:.02em;border-radius:10px;border:1px solid var(--border);background:#0c1f1a;color:var(--text);user-select:none}
 .cell.given{background:var(--given-bg); color:var(--given-fg)}
 .cell.solved{background:var(--solve-bg); color:var(--solve-fg)}
 .cell.empty{background:#0c1f1a; color:#466}
@@ -86,6 +85,6 @@ footer .wrap{width:100%;padding:10px calc(10px + var(--safe-right)) calc(10px + 
 @supports not (aspect-ratio: 1 / 1) {
   :root{ --grid-side: min(100vw, var(--grid-max)); }
   .grid.board{ width: var(--grid-side); }
-  .cell{ height: calc((var(--grid-side) - 4px - 4.5px) / 9); }
+  .cell{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-size:var(--cell-fs);font-weight:900;letter-spacing:.02em;border-radius:10px;border:1px solid var(--border);background:#0c1f1a;color:var(--text);user-select:none}
 }
 
