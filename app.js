@@ -17,7 +17,7 @@
   function log(msg){ consoleEl.textContent = msg; }
 
   // Haptics
-  function haptic(ms=15){ try{ if(navigator.vibrate) navigator.vibrate(ms); }catch(e){} }
+  function haptic(ms=15){}catch(e){} }
 
   function buildBoard(){
     gridEl.innerHTML='';
@@ -81,8 +81,7 @@
     const handler = (e)=> applyKey(e.currentTarget.dataset.key);
     $$('.numpad button').forEach(btn=>{
       btn.addEventListener('click', handler);
-      btn.addEventListener('click', ()=> haptic(10));
-    });
+});
     $('#solve').addEventListener('click', ()=> haptic(14));
     $('#clearAll').addEventListener('click', ()=> haptic(14));
     window.addEventListener('keydown', (e)=>{
