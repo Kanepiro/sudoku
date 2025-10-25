@@ -84,8 +84,8 @@ footer{background:transparent;color:var(--sub)}
 footer .wrap{width:100%;padding:10px calc(10px + var(--safe-right)) calc(10px + var(--safe-bottom)) calc(10px + var(--safe-left));margin:0 auto;display:grid; place-items:center;text-align:center}
 
 
-/* === UI tighten: reduce vertical gaps around board and numpad (SH-M24) === */
-.board-wrap{ margin-bottom: 6px !important; }
-#numpadWrap{ margin-top: 6px !important; margin-bottom: 6px !important; padding-top: 0 !important; padding-bottom: 0 !important; }
-.numpad{ margin-top: 0 !important; margin-bottom: 0 !important; }
+/* === Tighten board↔numpad gap (eliminate transform layout gap) === */
+.board-wrap{ margin-bottom: 4px !important; }
+#numpadWrap{ margin-top: 0 !important; }
+.numpad{ transform: none !important; margin-top: 0 !important; }
 
