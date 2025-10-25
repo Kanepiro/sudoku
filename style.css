@@ -82,3 +82,13 @@ button.secondary{background:#1f3a34;color:var(--sub)}
 
 footer{background:transparent;color:var(--sub)}
 footer .wrap{width:100%;padding:10px calc(10px + var(--safe-right)) calc(10px + var(--safe-bottom)) calc(10px + var(--safe-left));margin:0 auto;display:grid; place-items:center;text-align:center}
+
+
+/* === SH-M24 fixed keypad (no vw-based scaling) === */
+.numpad{ grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.numpad button{
+  font-size: 32px;        /* fixed size */
+  padding: 18px 12px;     /* fixed vertical */
+  /* keep existing colors/borders as-is */
+}
+
