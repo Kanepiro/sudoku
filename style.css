@@ -66,7 +66,7 @@ button.secondary{background:#1f3a34;color:var(--sub)}
 #numpadWrap{width:min(100%, var(--grid-max)); margin:0 auto; transform-origin: bottom center;}
 .numpad{
   width:100%;
-  margin:0 auto calc(-19px + var(--safe-bottom)) auto;
+  margin:0 auto 0 auto;
   display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:14px;
   row-gap:4px;
   transform: scale(var(--np-scale));
