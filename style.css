@@ -67,6 +67,7 @@ button.secondary{background:#1f3a34;color:var(--sub)}
   width:100%;
   margin:0 auto calc(-19px + var(--safe-bottom)) auto;
   display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:14px;
+  row-gap:4px;
   transform: scale(var(--np-scale));
 }
 .numpad button{
