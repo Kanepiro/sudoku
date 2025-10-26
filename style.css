@@ -2,7 +2,7 @@
   --bg:#0b1f1a;--card:#0f2822;--border:#1f3a34;--accent:#10b981;--accent-2:#34d399;--text:#e6fffa;--sub:#8ee6d3;
   --container-px: 100vw;
   --grid-max: 560px;
-  --cell-fs: clamp(24px, 9vw, 56px);
+  --cell-fs: clamp(20px, 6.6vw, 36px);
   --np-scale: 1; /* numpad scale */
   --np-fs: clamp(26px, 8.5vw, 40px);
   --safe-left: env(safe-area-inset-left, 0px);
@@ -17,8 +17,7 @@ body{font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu 
 
 header{position:sticky;top:0;background:var(--accent);color:#03211b;z-index:2}
 header .wrap{width:100%;padding:max(6px, calc(6px + var(--safe-top))) calc(10px + var(--safe-right)) 6px calc(10px + var(--safe-left));
-  margin:0 auto;display:grid; place-items:center; text-align:center; gap:6px;
-  box-sizing:border-box;}
+  margin:0 auto;display:grid; place-items:center; text-align:center; gap:6px;}
 h1{font-size:clamp(15px,4.4vw,20px);margin:0;line-height:1.12}
 .badge{background:#f59e0b;color:#111827;padding:4px 8px;border-radius:8px;font-weight:800}
 
@@ -52,8 +51,7 @@ button.secondary{background:#1f3a34;color:var(--sub)}
 }
 
 .cell{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-size:var(--cell-fs);
-  font-weight:900;letter-spacing:.02em;border-radius:10px;border:1px solid var(--border);background:#0c1f1a;color:var(--text);user-select:none
-  line-height:1;}
+  font-weight:900;letter-spacing:.02em;border-radius:10px;border:1px solid var(--border);background:#0c1f1a;color:var(--text);user-select:none}
 .cell.given{background:var(--given-bg); color:var(--given-fg)}
 .cell.solved{background:var(--solve-bg); color:var(--solve-fg)}
 .cell.empty{background:#0c1f1a; color:#466}
@@ -83,8 +81,7 @@ button.secondary{background:#1f3a34;color:var(--sub)}
 
 .console{background:#061a15;border:1px dashed var(--border);border-radius:12px;padding:10px;min-height:auto;white-space:pre-wrap;word-break:break-word;color:#a7f3d0
   padding-top:0;
-  padding-bottom:0;
-  margin-top:8px;}
+  padding-bottom:0;}
 
 footer{background:transparent;color:var(--sub)}
 footer .wrap{width:100%;padding:10px calc(10px + var(--safe-right)) calc(10px + var(--safe-bottom)) calc(10px + var(--safe-left));margin:0 auto;display:grid; place-items:center;text-align:center}
