@@ -72,7 +72,7 @@ button.secondary{background:#1f3a34;color:var(--sub)}
 }
 .numpad button{
   font-size: calc(var(--np-fs) * var(--np-scale));
-  padding: calc(clamp(12px, 2.8vh, 22px) * var(--np-scale)) 12px;
+  padding: calc(clamp(8px, 1.8vh, 14px) * var(--np-scale)) 12px;
   border-radius:14px;background:#0f3a30;color:#aef5e4;border:1px solid #1f6a57;
   touch-action:manipulation;
 }
