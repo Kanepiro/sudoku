@@ -22,7 +22,7 @@ h1{font-size:clamp(15px,4.4vw,20px);margin:0;line-height:1.12}
 .badge{background:#f59e0b;color:#111827;padding:4px 8px;border-radius:8px;font-weight:800}
 
 main{width:100%;padding-left: calc(8px + var(--safe-left));padding-right: calc(8px + var(--safe-right));
-  padding-bottom: calc(12px + var(--safe-bottom));
+  padding-bottom: calc(6px + var(--safe-bottom));
   margin:14px auto;display:grid; gap:14px;justify-items:center;}
 .card{width:min(100%,var(--container-px));background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px}
 .board-card{padding-bottom:0}
