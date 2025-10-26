@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>数独ソルバ v2.35</title>
+  <title>数独ソルバ v2.36</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="style.css?v=20251017083530">
   <meta name="theme-color" content="#10b981">
@@ -11,7 +11,7 @@
 <body>
   <header>
     <div class="wrap">
-      <h1>数独ソルバ v2.35</h1>
+      <h1>数独ソルバ v2.36</h1>
       <div id="offline" class="badge" hidden>オフライン</div>
     </div>
   </header>
@@ -48,7 +48,14 @@
       <pre id="console" class="console" aria-live="polite"></pre>
     </section>
   </main>
-<script defer src="app.js?v=20251017083530"></script>
+
+  <footer>
+    <div class="wrap">
+      <small>端末内で完結（オフライン可） / 入力はキーパッド / 与件と解答を色分け</small>
+    </div>
+  </footer>
+
+  <script defer src="app.js?v=20251017083530"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
