@@ -79,7 +79,9 @@ button.secondary{background:#1f3a34;color:var(--sub)}
 .numpad button:active{transform:translateY(1px)}
 .numpad button.ghost{background:#0d2b23;color:#8ee6d3}
 
-.console{background:#061a15;border:1px dashed var(--border);border-radius:12px;padding:10px;min-height:0px;white-space:pre-wrap;word-break:break-word;color:#a7f3d0}
+.console{background:#061a15;border:1px dashed var(--border);border-radius:12px;padding:10px;min-height:auto;white-space:pre-wrap;word-break:break-word;color:#a7f3d0
+  padding-top:0;
+  padding-bottom:0;}
 
 footer{background:transparent;color:var(--sub)}
 footer .wrap{width:100%;padding:10px calc(10px + var(--safe-right)) calc(10px + var(--safe-bottom)) calc(10px + var(--safe-left));margin:0 auto;display:grid; place-items:center;text-align:center}
